@@ -1,0 +1,255 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+  font-family: "Inter";
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #28224B;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+button {
+  background: initial;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-section {
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+.header-section .header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.header-section .header-flex .menu-list {
+  display: flex;
+  gap: 32px;
+}
+.header-section .header-flex .menu-list .menu-item .menu-item--link:hover,
+.header-section .header-flex .menu-list .menu-item .menu-item--link:focus {
+  color: #35B8BE;
+}
+
+.hero-section {
+  padding-top: 100px;
+  padding-bottom: 183px;
+}
+.hero-section .hero--flex {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-section .hero--flex .frame {
+  margin-top: 57px;
+}
+.hero-section .hero--flex .frame .hero-title {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  /* or 100% */
+  letter-spacing: 1.8;
+  max-width: 606px;
+}
+.hero-section .hero--flex .frame .hero-title .hero-title--deliver {
+  color: #35B8BE;
+}
+.hero-section .hero--flex .frame .hero-abaut {
+  font-weight: 400;
+  max-width: 539px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.36px;
+  color: #546285;
+  margin-top: 27px;
+}
+.hero-section .hero--flex .frame .hero--button {
+  margin-top: 53px;
+  background: #35B8BE;
+  border-radius: 6px;
+  color: #FFFFFF;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 19px;
+  padding-bottom: 21px;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.caunt-calories-section {
+  background-color: #d8fcfe;
+  padding-top: 154px;
+  padding-bottom: 100px;
+}
+.caunt-calories-section .caunt-calories-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-result .count-calories-result-titile {
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  /* identical to box height, or 110% */
+  text-align: center;
+  letter-spacing: 1.65px;
+  color: #35B8BE;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-result .coutn-caliries-result--abaut {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  letter-spacing: 0.36px;
+  color: #546285;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-inp {
+  margin-top: 75px;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-inp .caunt-calories-section-title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 1.65px;
+  color: #35B8BE;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-inp .caunt-calories-section-abaut {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.36px;
+  color: #546285;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-inp .form-caunt-calories {
+  display: flex;
+  align-items: baseline;
+  gap: 27px;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-inp .form-caunt-calories .caunt-calories-section-input {
+  display: block;
+  width: 254px;
+  height: 35px;
+  outline: none;
+  background: rgba(47, 178, 211, 0.1411764706);
+  margin-top: 30px;
+  border: 1px solid rgba(97, 114, 131, 0.2);
+  border-radius: 6px;
+}
+.caunt-calories-section .caunt-calories-flex .caunt-calories-inp .form-caunt-calories .count-calories-btn {
+  padding: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+  text-align: center;
+  letter-spacing: 0.36px;
+  border: 1px solid rgb(90, 135, 183);
+  border-radius: 4px;
+  color: #000000;
+  font-size: 13px;
+}
+
+.choice-food-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #F5FBFC;
+}
+.choice-food-section .choice-food-title {
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 55px;
+  /* or 100% */
+  letter-spacing: 1.65px;
+  color: #35B8BE;
+  text-align: center;
+}
+.choice-food-section .choice-food-abaut {
+  font-size: 18px;
+  line-height: 27px;
+  /* or 150% */
+  letter-spacing: 0.36px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #546285;
+  max-width: 324px;
+  margin-top: 20px;
+}
+.choice-food-section .form-choice-food {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  justify-content: center;
+}
+.choice-food-section .form-choice-food .choice-food-input {
+  display: block;
+  width: 254px;
+  height: 35px;
+  outline: none;
+  background: rgba(47, 178, 211, 0.1411764706);
+  margin-top: 30px;
+  border: 1px solid rgba(97, 114, 131, 0.2);
+  border-radius: 6px;
+}
+.choice-food-section .form-choice-food .choice-food-button {
+  padding: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  /* identical to box height, or 169% */
+  text-align: center;
+  letter-spacing: 0.36px;
+  border: 1px solid rgb(90, 135, 183);
+  border-radius: 4px;
+  color: #000000;
+  font-size: 13px;
+}
+
+.footer-section {
+  background: #35B8BE;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-section .footer-title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #08090A;
+}
+.footer-section .tehnology-list .tehnology-item-paragraf {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #546285;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,16 @@
+.header-section {
+  padding-top: 25px;
+  padding-bottom: 24px;
+}
+.header-section .header-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.header-section .header-flex .menu-list {
+  display: flex;
+  gap: 32px;
+}
+.header-section .header-flex .menu-list .menu-item .menu-item--link:hover,
+.header-section .header-flex .menu-list .menu-item .menu-item--link:focus {
+  color: #35B8BE;
+}/*# sourceMappingURL=header.css.map */
