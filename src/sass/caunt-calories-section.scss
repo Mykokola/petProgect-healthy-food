@@ -4,7 +4,7 @@
     padding-bottom: 100px;
     .caunt-calories-flex{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     .caunt-calories-result{
         .count-calories-result-titile{
             text-align: center;
@@ -33,6 +33,7 @@
         }
     }
     .caunt-calories-inp{
+        height: 471px;
         margin-top:75px;
     .caunt-calories-section-title{
         font-weight: 400;

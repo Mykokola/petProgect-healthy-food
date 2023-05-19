@@ -1,22 +1,46 @@
 import { fetchFood } from './fetchfood';
 import { drawCuntFoodNutrition } from './drawCaloriesCaunt';
-
+import { fetchDish } from './fetchDishs';
 const cauntFoodBtn = document.querySelector('.count-calories-btn'),
-  cauntCaloriesResult = document.querySelector('.caunt-calories-result');
+  cauntCaloriesResult = document.querySelector('.caunt-calories-result'),
+  choiceFoddBtn = document.querySelector('.choice-food-button'),
+  choiceFoodList = document.querySelector('.choice-food-list')
 cauntFoodBtn.addEventListener('click', e => {
   e.preventDefault();
   cauntCaloriesResult.innerHTML = ``;
   fetchFood().then(foodCal => {
-    console.log(foodCal)
     cauntCaloriesResult.insertAdjacentHTML(
       'beforeend',
       drawCuntFoodNutrition(foodCal)
     );
   });
 });
-const fetchDish = async () => {
-    const response = await fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=apple&app_id=aa65fcc4&app_key=f3caedd0bc456a2c084050f824421aa6&imageSize=SMALL`)
-    const food = await response.json()
-    return food
+
+
+choiceFoddBtn.addEventListener('click', e => {
+  e.preventDefault();
+
+  fetchDish().then(dishsList =>{ 
+    if(dishsList){
+  choiceFoodList.innerHTML = ``
+    }
+    choiceFoodList.insertAdjacentHTML('beforeend', drawDishsList(dishsList.hits))
+  }).catch(e => {
+    console.log(e.message)
+  })
+
+})
+function drawDishsList(dishsList){
+  
+ return dishsList.map(elem => {
+    elem = elem.recipe
+    const {label,ingredientLines,images} = elem
+    return `<li class="choice-food-item">
+    <img src="${images.SMALL.url}" alt="">
+    <div>
+    <h3 class="choice-food-item--title">${label}</h3>
+    <p class="choice-food-item--paragraf">${ingredientLines.join('')}</p>
+    </div>
+    </li>`
+  }).join('')
 }
-fetchDish().then(e => console.log(e))

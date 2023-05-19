@@ -5,7 +5,7 @@
 }
 .caunt-calories-section .caunt-calories-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .caunt-calories-section .caunt-calories-flex .caunt-calories-result .count-calories-result-titile {
   text-align: center;
@@ -26,6 +26,7 @@
   color: #546285;
 }
 .caunt-calories-section .caunt-calories-flex .caunt-calories-inp {
+  height: 471px;
   margin-top: 75px;
 }
 .caunt-calories-section .caunt-calories-flex .caunt-calories-inp .caunt-calories-section-title {

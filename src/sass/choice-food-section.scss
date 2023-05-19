@@ -57,4 +57,41 @@
         color: #000000;
         font-size: 13px;
     }
+
+}
+.choice-food-list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 25px;
+    .choice-food-item{
+        display: flex;
+        gap: 35px;
+        .choice-food-item--title{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 20px;
+
+            letter-spacing: 0.6px;
+
+            color: #08090A;
+
+            margin-bottom: 20px;
+        }
+        .choice-food-item--paragraf{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+
+            letter-spacing: 0.32px;
+
+            color: #546285;
+        }
+    }
+   
 }}

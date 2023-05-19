@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .caunt-calories-section .caunt-calories-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .caunt-calories-section .caunt-calories-flex .caunt-calories-result .count-calories-result-titile {
   text-align: center;
@@ -131,6 +131,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: #546285;
 }
 .caunt-calories-section .caunt-calories-flex .caunt-calories-inp {
+  height: 471px;
   margin-top: 75px;
 }
 .caunt-calories-section .caunt-calories-flex .caunt-calories-inp .caunt-calories-section-title {
@@ -205,7 +206,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .choice-food-section .form-choice-food {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
   gap: 20px;
   justify-content: center;
 }
@@ -232,7 +233,16 @@ h1, h2, h3, h4, h5, h6, p {
   color: #000000;
   font-size: 13px;
 }
-
+.choice-food-section .choice-food-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  gap: 25px;
+}
+.choice-food-section .choice-food-list .choice-food-item {
+  display: flex;
+  gap: 35px;
+}
 .footer-section {
   background: #35B8BE;
   padding-top: 50px;
