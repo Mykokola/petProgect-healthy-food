@@ -1,6 +1,7 @@
 import { fetchFood } from './fetchfood';
 import { drawCuntFoodNutrition } from './drawCaloriesCaunt';
 import { fetchDish } from './fetchDishs';
+import { drawDishsList } from './drawDishsList';
 const cauntFoodBtn = document.querySelector('.count-calories-btn'),
   cauntCaloriesResult = document.querySelector('.caunt-calories-result'),
   choiceFoddBtn = document.querySelector('.choice-food-button'),
@@ -30,17 +31,3 @@ choiceFoddBtn.addEventListener('click', e => {
   })
 
 })
-function drawDishsList(dishsList){
-  
- return dishsList.map(elem => {
-    elem = elem.recipe
-    const {label,ingredientLines,images} = elem
-    return `<li class="choice-food-item">
-    <img src="${images.SMALL.url}" alt="">
-    <div>
-    <h3 class="choice-food-item--title">${label}</h3>
-    <p class="choice-food-item--paragraf">${ingredientLines.join('')}</p>
-    </div>
-    </li>`
-  }).join('')
-}
