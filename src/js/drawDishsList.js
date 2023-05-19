@@ -8,6 +8,7 @@ function drawDishsList(dishsList){
        <div>
        <h3 class="choice-food-item--title">${label}</h3>
        <p class="choice-food-item--paragraf">${ingredientLines.join('')}</p>
+       <button type="button" class="choice-food-item--save-recipe-btn">Save the recipe</button>
        </div>
        </li>`
      }).join('')

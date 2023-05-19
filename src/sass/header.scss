@@ -4,13 +4,24 @@
 .header-flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    .header--logo{
+        height: 50px;
+        width: 50px;
+    }
     .menu-list{
         display: flex;
         gap: 32px;
         .menu-item{
+            display: flex;
+            align-items:center;
             .menu-item--link:hover,
             .menu-item--link:focus{
                 color:#35B8BE;
+            }
+            .header--cart-svg{
+                width: 40px;
+                height: 40px;
             }
         }
       

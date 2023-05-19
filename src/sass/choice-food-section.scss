@@ -92,6 +92,23 @@
 
             color: #546285;
         }
+        .choice-food-item--save-recipe-btn{
+            background: #35B8BE;
+            border-radius: 6px;
+            padding: 12px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+            /* identical to box height, or 169% */
+
+            text-align: center;
+            letter-spacing: 0.36px;
+
+            margin-top: 50px;
+        }
     }
    
 }}

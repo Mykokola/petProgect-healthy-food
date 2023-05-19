@@ -1,7 +1,8 @@
-.footer-section{
+.footer{
     background: #35B8BE;
     padding-top: 50px;
     padding-bottom: 50px;
+
     .footer-title{
         font-weight: 400;
         font-size: 13px;
@@ -21,4 +22,9 @@
             color: #546285;
         }
     }
+}
+.footer-recip{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
